@@ -1,0 +1,33 @@
+.main-body{
+    margin-top: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    width: 96%;
+    height: 90vh;
+    position: relative;
+    
+}
+.messages-table-container{
+    border: 1px solid red;
+    height: 80vh;
+}
+
+table{
+    outline: auto;
+    display: flex;
+    
+    
+    flex-direction: column;
+}
+
+.email-date{
+    /* display: flex;
+    border: 1px solid green;
+    flex-direction: column; */
+
+    color: red;
+}

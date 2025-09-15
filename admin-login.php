@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['admin_id'] = $admin['admin_id'];
             $_SESSION['admin_fname'] = $admin['fname'];
             session_regenerate_id(true);
-            header("Location: http://localhost/AG_MAMACLAY_DASHBOARD/pos.php");
+            header("Location: http://localhost/POULTRY-SHOP-PROJECT/AG_MAMACLAY_DASHBOARD/pos.php");
             exit();
         } else {
             $error = "Incorrect password.";
