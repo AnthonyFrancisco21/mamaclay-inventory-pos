@@ -13,7 +13,7 @@ Built using **HTML, CSS, JavaScript (frontend)** and **PHP, MySQL (backend)**.
 - Responsive design/ Mobile friendly.
 - Sales statistics and tracking.
 
-**Tech Stack:** Frontend – HTML, CSS, Bootstrap, JavaScript | Backend – PHP, MySQL | Others – XAMPP, RESTful APIs, SweetAlert2, html2pdf
+**Tech Stack:** Frontend – HTML, CSS, Bootstrap, JavaScript | Backend – PHP, MySQL | Others – XAMPP, RESTful APIs, Chart.js, SweetAlert2, html2pdf
 
 
 **Folder Structure**
@@ -278,8 +278,10 @@ Built using **HTML, CSS, JavaScript (frontend)** and **PHP, MySQL (backend)**.
 
        ---
 
-**Future Features**
- - Planned improvements and upcoming functionalities:
+ ## Future Features
+
+ Planned improvements and upcoming functionalities:
+ 
  - Multi-language support (English, Filipino, etc.)
  - Export statistics graph as PDF or Excel
  - Role-based access control
