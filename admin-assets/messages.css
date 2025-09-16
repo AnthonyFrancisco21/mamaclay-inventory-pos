@@ -12,22 +12,62 @@
     
 }
 .messages-table-container{
-    border: 1px solid red;
     height: 80vh;
+    width:100%;
 }
 
 table{
-    outline: auto;
+    
     display: flex;
-    
-    
     flex-direction: column;
 }
 
-.email-date{
-    /* display: flex;
-    border: 1px solid green;
-    flex-direction: column; */
+.tr-tag{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; 
+    padding: .3em;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.1);
+}
 
-    color: red;
+.tr-tag:hover {
+  box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+  background: #fafafa;
+}
+
+input{
+    margin: 0 2px;
+}
+
+.email{
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    color: var(--blackText);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.subject{
+    font-size: 1rem;
+    color: var(--blackText);
+    font-weight: 500;
+    flex-shrink: 0;
+    padding-right: 10px;
+    white-space: nowrap;
+    margin-left: 6em;
+}
+
+.message{
+    color: var(--quinary-color);
+    flex: 1;
+    white-space: nowrap;  
+    overflow: hidden;     
+    text-overflow: ellipsis;
 }
