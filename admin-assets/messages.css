@@ -3,23 +3,40 @@
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
-    padding: 1em;
     border-radius: 10px;
     background-color: var(--tertiary-color);
     width: 96%;
     height: 90vh;
     position: relative;
     
+    
 }
 .messages-table-container{
-    height: 80vh;
+    height: 85vh;
     width:100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.table-btn{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: .5em;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
 }
 
 table{
-    
     display: flex;
     flex-direction: column;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .tr-tag{
@@ -39,6 +56,22 @@ table{
 
 input{
     margin: 0 2px;
+}
+
+.star-checkbox {
+      display: none; /* hide the native checkbox */
+}
+
+.star-label {
+    font-size: 1.3rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* When checked */
+.star-checkbox:checked + .star-label {
+    color: gold;
 }
 
 .email{
@@ -70,4 +103,9 @@ input{
     white-space: nowrap;  
     overflow: hidden;     
     text-overflow: ellipsis;
+}
+
+.message-tbody{
+    max-height: 600px; /* adjust to your needs */
+    overflow-y: auto;
 }

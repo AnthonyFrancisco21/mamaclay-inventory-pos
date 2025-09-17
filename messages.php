@@ -114,18 +114,37 @@ if(!isset($_SESSION['admin_id'])){
                 
                 <div class="messages-table-container">
 
+                    <div class="table-btn">
+
+                        <button type="button" class="btn btn-danger">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                            Delete
+                        </button>
+
+                        <button type="button" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-240 160-160-56-56-64 64v-168h-80v168l-64-64-56 56 160 160ZM200-640v440h560v-440H200Zm0 520q-33 0-56.5-23.5T120-200v-499q0-14 4.5-27t13.5-24l50-61q11-14 27.5-21.5T250-840h460q18 0 34.5 7.5T772-811l50 61q9 11 13.5 24t4.5 27v499q0 33-23.5 56.5T760-120H200Zm16-600h528l-34-40H250l-34 40Zm264 300Z"/></svg>
+                            Archive
+                        </button>
+                        
+                        <button type="button" class="btn btn-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                            <span style="color: white;">Starred</span>
+                        </button>
+                        
+                    </div>
+                            
                     <table>
-                        <thead>
-                            <button>Delete</button>
-                            <button>Archive</button>
-                            <button>Prioritize</button>
-                                                           
-                        </thead>
-                        <tbody>
+                        
+                        <tbody class="message-tbody">
+
                             <tr class="tr-tag">
                                 <td class="email">
                                     <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
+                                    <span>
+                                        <input type="checkbox" id="star1" class="star-checkbox">
+                                        <label for="star1" class="star-label">★</label>
+                                    </span>
                                     <span>thisiasdasdsasemail@gmail.com</span>
                                 </td>
                                 
@@ -134,173 +153,8 @@ if(!isset($_SESSION['admin_id'])){
 
                             </tr> <!--END -->    
 
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
+                            
 
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
-
-                            <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span><input type="checkbox" class="star"></span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-
-                            </tr> <!--END -->  
                             
 
                         </tbody>
