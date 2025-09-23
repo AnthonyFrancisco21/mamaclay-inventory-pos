@@ -138,7 +138,7 @@ if(!isset($_SESSION['admin_id'])){
                         
                         <tbody class="message-tbody">
 
-                            <tr class="tr-tag">
+                            <!-- <tr class="tr-tag">
                                 <td class="email">
                                     <span><input type="checkbox" class="check"></span>
                                     <span>
@@ -150,23 +150,41 @@ if(!isset($_SESSION['admin_id'])){
                                 
                                 <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
                                 <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
+                                <td class="time">AM 8:31</td>
 
-                            </tr> <!--END -->    
-
-                            
-
-                            
+                            </tr> --> <!--END -->
 
                         </tbody>
                     </table>
 
-                </div>
+                    <div class="pagination-wrapper">
+
+                        <nav aria-label="pagination-nav">
+                            <ul class="pagination msg-pagination">
+                                <li class="page-item" id="prev-page">
+                                    <a class="page-link" data-page="prev" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item" id="next-page">
+                                    <a class="page-link" data-page="next" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    
+
+                </div><!--messages-table-container end-->
             </div>   
         </main>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script/message.js"></script>
     
 
 </body>
