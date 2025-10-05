@@ -17,7 +17,8 @@ $pageSize = 15;
 $offset = ($page - 1) * $pageSize;
 
 $sql = "
-    SELECT client_name,
+    SELECT msg_id,
+           client_name,
            client_email, 
            subject, 
            message, 

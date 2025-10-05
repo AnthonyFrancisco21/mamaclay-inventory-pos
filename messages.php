@@ -117,7 +117,6 @@ if(!isset($_SESSION['admin_id'])){
                     <div class="table-btn">
 
                         <button type="button" class="btn btn-danger">
-
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
                             Delete
                         </button>
@@ -127,32 +126,11 @@ if(!isset($_SESSION['admin_id'])){
                             Archive
                         </button>
                         
-                        <button type="button" class="btn btn-warning">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                            <span style="color: white;">Starred</span>
-                        </button>
-                        
                     </div>
                             
                     <table>
                         
                         <tbody class="message-tbody">
-
-                            <!-- <tr class="tr-tag">
-                                <td class="email">
-                                    <span><input type="checkbox" class="check"></span>
-                                    <span>
-                                        <input type="checkbox" id="star1" class="star-checkbox">
-                                        <label for="star1" class="star-label">★</label>
-                                    </span>
-                                    <span>thisiasdasdsasemail@gmail.com</span>
-                                </td>
-                                
-                                <td class="subject"> This is asasdasdasdasasdasdasdasdasdadasdsubject</td>
-                                <td class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolorum quibusdam quo cumque error natus nemo, eos delectus sint eum beatae impedit modi eius a neque, ex, veniam animi non.</td>
-                                <td class="time">AM 8:31</td>
-
-                            </tr> --> <!--END -->
 
                         </tbody>
                     </table>
@@ -175,11 +153,45 @@ if(!isset($_SESSION['admin_id'])){
                         </nav>
 
                     </div>
-                    
 
                 </div><!--messages-table-container end-->
-            </div>   
+
+                <!-- Modal -->
+                <div class="modal fade" id="read-modal" tabindex="-1" aria-labelledby="read-modal-label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="read-modal-label">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <!-- <div class="msg-header">
+                            <p class="client-name">Anthony Francisco</p>
+                            <p class="msg-date">Sep 15</p>
+                        </div>
+
+                        <p class="msg-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis accusantium esse accusamus saepe nam, tempora perspiciatis itaque aliquam ad illum sequi autem eos voluptate odit eligendi rem pariatur dolorum.</p> -->
+
+                        <div class="msg-header">
+                            <p class="client-name"></p>
+                            <p class="msg-date"></p>
+                        </div>
+
+                        <p class="msg-content"></p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+            </div><!--Main Body End-->
         </main>
+
+        
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
